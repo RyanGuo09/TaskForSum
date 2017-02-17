@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>The data pair check</title>
+  <script data-require="jquery@2.2.4" data-semver="2.2.4" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script data-require="angular.js@1.5.8" data-semver="1.5.8" src="https://code.angularjs.org/1.5.8/angular.js"></script>
+  <link data-require="bootstrap@3.3.7" data-semver="3.3.7" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <script data-require="bootstrap@3.3.7" data-semver="3.3.7" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+
+  <div class="row">
+    <div class="col-sm-6">
+      <textarea class="prescreen-input" id="myTextArea" rows="8" ng-model='text1'>
+
+      </textarea>
+      <p class="display">Your in put is {{text1}}</p>
+      <article>Please separate each pair by return(enter)</article>
+      <button class="prescreen-button btn btn-block" ng-click='getCount(text1)'>submit </button>
+
+      <p class="prescreen-output" ng-repeat="x in arr">The Total for {{x.name}}: <span ng-class="x.isPalin ? 'prescreen-palindorme' : ''">{{x.value}}</span></p>
+    </div>
+  </div>
+
+</body>
+
+</html>

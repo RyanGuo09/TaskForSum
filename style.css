@@ -1,0 +1,23 @@
+/* Styles go here */
+
+.prescreen-input{
+  width:80%;
+  white-space: normal;
+  text-align: justify;
+  -moz-text-align-last: center; /* Firefox 12+ */
+  text-align-last: center;
+  margin:10%;
+}
+.prescreen-button{
+  background-color:blue;
+  color:white;
+}
+.prescreen-output{
+  font-size:20px;
+  color:green;
+  text-align:center;
+}
+
+.prescreen-palindorme {
+  color: red;
+}
