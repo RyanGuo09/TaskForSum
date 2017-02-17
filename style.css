@@ -1,23 +1,37 @@
 /* Styles go here */
+body{
+  font-family:sans-serif;
+  font-size:1.5em;
+}
 
 .prescreen-input{
-  width:80%;
+  width:40%;
   white-space: normal;
   text-align: justify;
   -moz-text-align-last: center; /* Firefox 12+ */
-  text-align-last: center;
   margin:10%;
+  opacity:0.8;
 }
 .prescreen-button{
-  background-color:blue;
-  color:white;
+  margin:10%;
+  width:50%;
+}
+.display{
+  margin:0 10%;
+  color:red;
+  width:50%;
 }
 .prescreen-output{
   font-size:20px;
-  color:green;
-  text-align:center;
+  color:black;
+  margin:0 10%;
+  
 }
 
 .prescreen-palindorme {
   color: red;
+}
+.row{
+  background:url('https://static.pexels.com/photos/300943/pexels-photo-300943.jpeg') no-repeat;
+  background-size: cover;
 }
